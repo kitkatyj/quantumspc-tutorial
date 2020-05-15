@@ -48,7 +48,7 @@ header,section,footer {
 }
 
 header {
-    background-image: url("../img/welc.png");
+    background-image: url("../img/welcome.jpg");
 }
 
 h1 {
@@ -100,17 +100,17 @@ header .logo {
 }
 
 #minecraft {
-    background-image: url("../img/explore.png");
+    background-image: url("../img/explore.jpg");
     background-color: #136B07;
 }
 
 #mods {
-    background-image: url("../img/screenmod.png");
+    background-image: url("../img/screenmod.jpg");
     background-color: #777802;
 }
 
 footer {
-    background-image: url("../img/vaporsunrise.png");
+    background-image: url("../img/vaporsunrise.jpg");
     background-color: #6B0707;
 }
 
