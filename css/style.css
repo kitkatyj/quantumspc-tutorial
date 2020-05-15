@@ -24,11 +24,6 @@ a:hover {
 
 header,section,footer {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:1em;
     background-size: cover;
     background-attachment: fixed;
     box-sizing: border-box;
@@ -38,7 +33,6 @@ header,section,footer {
 .pane {
     background-color: rgba(0,0,0,0.6);
     padding: 0.5em 1em;
-    border-radius: 1em;
 }
 
 .stepicon {
@@ -51,17 +45,8 @@ header {
     background-image: url("../img/welcome.jpg");
 }
 
-h1 {
-    width: 100%;
-    max-width: 480px;
-}
-
 h2 {
     font-size: 2em;
-}
-
-header h2 {
-    font-weight: 100;
 }
 
 #quantum-text {
@@ -70,7 +55,7 @@ header h2 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 5em;
+    height:3em;
     text-indent: -9999em;
 }
 
@@ -81,11 +66,13 @@ header .logo {
 .pane ol, .pane ul {
     background-color: #000;
     border-radius: 0.5em;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin:0.5em 0;
 }
 
 .pane ol a, .pane ul a {
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 0.5em 1em;
 }
 
@@ -116,4 +103,41 @@ footer {
 
 h1, h2, h3, p {
     text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .pane {
+        height:inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header,section,footer {
+        padding:1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pane {
+        border-radius: 1em;
+    }
+
+    h1 {
+        width: 100%;
+        max-width: 480px;
+    }
+}
+
+@media screen and (min-width: 992px),(orientation:landscape) {
+    
+}
+
+@media screen and (max-height: 480px){
+    
 }
