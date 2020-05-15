@@ -1,0 +1,119 @@
+html {
+    font-family: oscine,Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    color:white;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+ul,ol {
+    list-style: none;
+    padding:0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header,section,footer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1em;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    background-position: center;
+}
+
+.pane {
+    background-color: rgba(0,0,0,0.6);
+    padding: 0.5em 1em;
+    border-radius: 1em;
+}
+
+.stepicon {
+    width:1em;
+    text-align: center;
+    padding-right:0.5em;
+}
+
+header {
+    background-image: url("/img/welc.png");
+}
+
+h1 {
+    width: 100%;
+    max-width: 480px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+header h2 {
+    font-weight: 100;
+}
+
+#quantum-text {
+    display: block;
+    background-image: url("/img/Quantum Hori Logo DBG.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 5em;
+    text-indent: -9999em;
+}
+
+header .logo {
+    max-width: 480px;
+}
+
+.pane ol, .pane ul {
+    background-color: #000;
+    border-radius: 0.5em;
+    font-size: 2em;
+}
+
+.pane ol a, .pane ul a {
+    display: block;
+    padding: 0.5em 1em;
+}
+
+.pane ol a:hover, .pane ul a:hover {
+    background-color: #222;
+    border-radius: 0.5em;
+}
+
+#windows {
+    background-image: url("/img/windows10.jpg");
+    background-color:#021578;
+}
+
+#minecraft {
+    background-image: url("/img/explore.png");
+    background-color: #136B07;
+}
+
+#mods {
+    background-image: url("/img/screenmod.png");
+    background-color: #777802;
+}
+
+footer {
+    background-image: url("/img/vaporsunrise.png");
+    background-color: #6B0707;
+}
+
+h1, h2, h3, p {
+    text-align: center;
+}
