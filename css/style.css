@@ -105,6 +105,13 @@ h1, h2, h3, p {
     text-align: center;
 }
 
+@supports not (-webkit-touch-callout: none) {
+    /* CSS for other than iOS devices */ 
+    header,section,footer {
+        background-attachment: fixed;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .pane {
         height:inherit;
@@ -112,6 +119,7 @@ h1, h2, h3, p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-sizing: border-box;
     }
 }
 
